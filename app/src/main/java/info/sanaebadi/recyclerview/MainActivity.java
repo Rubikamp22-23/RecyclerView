@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,8 +39,10 @@ public class MainActivity extends AppCompatActivity {
         countryAdapter = new CountryAdapter(countryModelList);
 
         recyclerView.setHasFixedSize(true);
-//        recyclerView.setLayoutManager(new LinearLayoutManager(getBaseContext(), RecyclerView.VERTICAL, false));
-        recyclerView.setLayoutManager(new GridLayoutManager(getBaseContext(), 2));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getBaseContext(), RecyclerView.VERTICAL, false));
+//        recyclerView.setLayoutManager(new LinearLayoutManager(getBaseContext(), RecyclerView.HORIZONTAL, false));
+//        recyclerView.setLayoutManager(new GridLayoutManager(getBaseContext(), 2));
+//        recyclerView.setLayoutManager(new GridLayoutManager(getBaseContext(), 3));
         recyclerView.setAdapter(countryAdapter);
 
 
