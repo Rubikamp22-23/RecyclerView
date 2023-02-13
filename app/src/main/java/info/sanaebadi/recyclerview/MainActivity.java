@@ -3,6 +3,7 @@ package info.sanaebadi.recyclerview;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -37,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
         countryAdapter = new CountryAdapter(countryModelList);
 
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getBaseContext(), RecyclerView.VERTICAL, false));
+//        recyclerView.setLayoutManager(new LinearLayoutManager(getBaseContext(), RecyclerView.VERTICAL, false));
+        recyclerView.setLayoutManager(new GridLayoutManager(getBaseContext(), 2));
         recyclerView.setAdapter(countryAdapter);
 
 
