@@ -4,8 +4,6 @@ public class CountryModel {
     private String imageUrl;
     private String countryName;
 
-    public CountryModel() {
-    }
 
     public CountryModel(String imageUrl, String countryName) {
         this.imageUrl = imageUrl;
