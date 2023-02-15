@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RecyclerView</string>
+    <string name="country_name_title"> Country Name: </string>
 </resources>

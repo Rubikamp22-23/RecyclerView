@@ -9,4 +9,11 @@ public class Const {
     public static final String ITALY_FLAG_IMAGE_URL = "https://media.istockphoto.com/id/1212397487/photo/italian-flag-waving.jpg?s=1024x1024&w=is&k=20&c=OvErl0BMA8teghzUcaLGq1fqbbSVyE6L5wp7pdhmpmw=";
     public static final String SPAIN_FLAG_IMAGE_URL = "https://media.istockphoto.com/id/148356060/photo/flag-of-spain.jpg?s=1024x1024&w=is&k=20&c=NftKXIEpq_TCmiXC8MmrFuiyrUGM0W-HnzjuamxekyA=";
     public static final String CYPRUS_FLAG_IMAGE_URL = "https://media.istockphoto.com/id/1349793384/photo/flag-of-cyprus.jpg?s=1024x1024&w=is&k=20&c=WS7h9jAE1sNJw7JU-X41W-N8PshbsaqBlzYAX9ULeGs=";
+
+
+    public static final String COUNTRY_IMAGE_KEY = "COUNTRY_IMAGE_KEY";
+    public static final String COUNTRY_NAME_KEY = "COUNTRY_NAME_KEY";
+    public static final String COUNTRY_LANGUAGE_KEY = "COUNTRY_LANGUAGE_KEY";
+    public static final String COUNTRY_POPULATION_KEY = "COUNTRY_POPULATION_KEY";
+    public static final String COUNTRY_CURRENCY_KEY = "COUNTRY_CURRENCY_KEY";
 }
