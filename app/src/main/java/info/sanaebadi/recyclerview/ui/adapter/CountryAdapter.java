@@ -1,4 +1,4 @@
-package info.sanaebadi.recyclerview.adapter;
+package info.sanaebadi.recyclerview.ui.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;

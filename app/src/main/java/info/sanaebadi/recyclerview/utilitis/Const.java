@@ -1,4 +1,4 @@
-package info.sanaebadi.recyclerview;
+package info.sanaebadi.recyclerview.utilitis;
 
 public class Const {
     public static final String AUSTRALIA_FLAG_IMAGE_URL = "https://media.istockphoto.com/id/853859846/photo/waving-australia-flag.jpg?s=1024x1024&w=is&k=20&c=kB0GppftyZIwTc8h4ikP2N4us6wOL1by0sOIyTcYAHE=";

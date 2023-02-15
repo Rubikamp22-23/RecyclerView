@@ -1,17 +1,17 @@
-package info.sanaebadi.recyclerview;
+package info.sanaebadi.recyclerview.ui.activity;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import info.sanaebadi.recyclerview.adapter.CountryAdapter;
+import info.sanaebadi.recyclerview.utilitis.Const;
+import info.sanaebadi.recyclerview.R;
+import info.sanaebadi.recyclerview.ui.adapter.CountryAdapter;
 import info.sanaebadi.recyclerview.model.CountryModel;
 
 public class MainActivity extends AppCompatActivity {
