@@ -63,11 +63,19 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
     @Override
     public void onItemClick(CountryModel countryModel) {
         Intent intent = new Intent(this, DetailsActivity.class);
-        intent.putExtra(Const.COUNTRY_IMAGE_KEY, countryModel.getImageUrl());
-        intent.putExtra(Const.COUNTRY_NAME_KEY, countryModel.getCountryName());
-        intent.putExtra(Const.COUNTRY_LANGUAGE_KEY, countryModel.getCountryLanguage());
-        intent.putExtra(Const.COUNTRY_POPULATION_KEY, countryModel.getCountryPopulation());
-        intent.putExtra(Const.COUNTRY_CURRENCY_KEY, countryModel.getCountryCurrency());
+        Bundle bundle = new Bundle();
+        bundle.putString(Const.COUNTRY_IMAGE_KEY, countryModel.getImageUrl());
+        bundle.putString(Const.COUNTRY_NAME_KEY, countryModel.getCountryName());
+        bundle.putString(Const.COUNTRY_LANGUAGE_KEY, countryModel.getCountryLanguage());
+        bundle.putString(Const.COUNTRY_POPULATION_KEY, countryModel.getCountryPopulation());
+        bundle.putString(Const.COUNTRY_CURRENCY_KEY, countryModel.getCountryCurrency());
+        intent.putExtras(bundle);
+
+//        intent.putExtra(Const.COUNTRY_IMAGE_KEY, countryModel.getImageUrl());
+//        intent.putExtra(Const.COUNTRY_NAME_KEY, countryModel.getCountryName());
+//        intent.putExtra(Const.COUNTRY_LANGUAGE_KEY, countryModel.getCountryLanguage());
+//        intent.putExtra(Const.COUNTRY_POPULATION_KEY, countryModel.getCountryPopulation());
+//        intent.putExtra(Const.COUNTRY_CURRENCY_KEY, countryModel.getCountryCurrency());
         startActivity(intent);
     }
 }
