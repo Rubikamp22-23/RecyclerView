@@ -1,7 +1,5 @@
 package info.sanaebadi.recyclerview.ui.adapter;
 
-import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,8 +16,6 @@ import java.util.List;
 import info.sanaebadi.recyclerview.OnItemClickListener;
 import info.sanaebadi.recyclerview.R;
 import info.sanaebadi.recyclerview.model.CountryModel;
-import info.sanaebadi.recyclerview.ui.activity.DetailsActivity;
-import info.sanaebadi.recyclerview.utilitis.Const;
 
 public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryViewHolder> {
 
@@ -51,14 +47,16 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryV
         holder.textviewCountryName.setText(countryModel.getCountryName());
 
         holder.itemView.setOnClickListener(view -> {
-            Context context = view.getContext();
-            Intent intent = new Intent(context, DetailsActivity.class);
-            intent.putExtra(Const.COUNTRY_IMAGE_KEY, countryModel.getImageUrl());
-            intent.putExtra(Const.COUNTRY_NAME_KEY, countryModel.getCountryName());
-            intent.putExtra(Const.COUNTRY_LANGUAGE_KEY, countryModel.getCountryLanguage());
-            intent.putExtra(Const.COUNTRY_POPULATION_KEY, countryModel.getCountryPopulation());
-            intent.putExtra(Const.COUNTRY_CURRENCY_KEY, countryModel.getCountryCurrency());
-            context.startActivity(intent);
+            onItemClickListener.onItemClick(countryModel);
+
+//            Context context = view.getContext();
+//            Intent intent = new Intent(context, DetailsActivity.class);
+//            intent.putExtra(Const.COUNTRY_IMAGE_KEY, countryModel.getImageUrl());
+//            intent.putExtra(Const.COUNTRY_NAME_KEY, countryModel.getCountryName());
+//            intent.putExtra(Const.COUNTRY_LANGUAGE_KEY, countryModel.getCountryLanguage());
+//            intent.putExtra(Const.COUNTRY_POPULATION_KEY, countryModel.getCountryPopulation());
+//            intent.putExtra(Const.COUNTRY_CURRENCY_KEY, countryModel.getCountryCurrency());
+//            context.startActivity(intent);
         });
 
     }

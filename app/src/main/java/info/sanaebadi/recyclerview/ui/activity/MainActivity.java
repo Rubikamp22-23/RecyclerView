@@ -1,5 +1,6 @@
 package info.sanaebadi.recyclerview.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -61,6 +62,12 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
 
     @Override
     public void onItemClick(CountryModel countryModel) {
-
+        Intent intent = new Intent(this, DetailsActivity.class);
+        intent.putExtra(Const.COUNTRY_IMAGE_KEY, countryModel.getImageUrl());
+        intent.putExtra(Const.COUNTRY_NAME_KEY, countryModel.getCountryName());
+        intent.putExtra(Const.COUNTRY_LANGUAGE_KEY, countryModel.getCountryLanguage());
+        intent.putExtra(Const.COUNTRY_POPULATION_KEY, countryModel.getCountryPopulation());
+        intent.putExtra(Const.COUNTRY_CURRENCY_KEY, countryModel.getCountryCurrency());
+        startActivity(intent);
     }
 }
